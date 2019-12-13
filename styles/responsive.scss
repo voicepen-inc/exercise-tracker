@@ -1,0 +1,75 @@
+
+@mixin maxWidth($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+@mixin minWidth($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin content-text {
+    h2 {
+        max-width: 567px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    p {
+        max-width: 606px;
+        font-size: 24px;
+        line-height: 33px;
+        font-weight: normal;
+    }
+
+    a {
+        background: orange;
+        font-weight: bold;
+        text-transform: initial;
+        padding: 15px 30px;
+        color: white;
+        border-radius: 3px;
+    }
+}
+
+@mixin content-layout {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    color: white;
+}
+
+@mixin logo {
+    font-weight: 800;
+    font-size: 36px;
+    color: #F2994A;
+
+    span {
+        color: white;
+    }
+}
+
+@mixin st-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin st-body {
+    background: $homeColor;
+    padding: 20px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    color: white;
+}
+
+@mixin home-i {
+    font-size: 50px;
+    padding: 13px;
+    background: #00538f;
+    color: orange;
+    border-radius: 4px;
+}
