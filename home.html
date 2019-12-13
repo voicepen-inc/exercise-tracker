@@ -1,0 +1,328 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css" -->
+        integrity="sha256-13EKEXRsynh3cmmNF1dlW6uvoC1SZVaW94bIHZQJoMU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="nav-wrapper">
+            <div>
+                <a class="brand-logo logo" href="index.html">VOICE<span>PEN</span></a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="signin.html">App</a></li>
+                    <li><a href="#">Creators Profile</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="user-container">
+                        <div class="user-img"></div><a class="dropdown-trigger" href="#!" data-target="dropdown1"><i
+                                class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">three</a></li>
+        </ul>
+    </header>
+
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="signin.html">App</a></li>
+        <li><a href="#">Creators Profile</a></li>
+        <li><a href="#">Video Tutorials</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <section class="home-content-wrapper">
+        <h5>Hello, John Doe</h5>
+
+        <div class="home-contents">
+            <div class="storage-wrapper">
+                <div class="storage">
+                    <i class="material-icons">storage</i>
+                    <p>Storage</p>
+                </div>
+
+                <div class="progress-text">
+                    <p>80GB</p>
+                    <p>16GB</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="files-wrapper">
+                <div class="file">
+                    <i class="material-icons">insert_drive_file</i>
+                    <p>Files</p>
+                </div>
+
+                <div class="file-text">
+                    <div>
+                        <h4>6</h4>
+                        <p>Records</p>
+                    </div>
+
+                    <div>
+                        <h4>21</h4>
+                        <p>Documents</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="create">
+                <a class="modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
+                <a class="modal-trigger" href="#modal1">Create New</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <a href="#!" class="modal-close right"><i class="material-icons">close</i></a>
+                <p>text editor icons</p>
+                <textarea rows="6" placeholder="Type or say something..."></textarea>
+                <div>
+                    <div class="modal-icon">
+                        <a href="#"><i class="material-icons">mic</i></a>
+                        <a href="#"><i class="material-icons">pause</i></a>
+                        <a href="#"><i class="material-icons">refresh</i></a>
+                        <a href="#"><i class="material-icons">arrow_downward</i></a>
+                        <a href="#"><i class="material-icons">share</i></a>
+                    </div>
+
+                    <div class="voice right">
+                        <div class="voice-header">
+                            <span>Voice</span>
+                            <a class="waves-effect waves-light btn v-name">Alex<i
+                                    class="material-icons">arrow_drop_down</i></a>
+                            <a href="#" class="waves-effect waves-light btn orange">Read</a>
+                        </div>
+
+                        <div class="voice-controls">
+                            <span>Volume</span><i class="material-icons right">volume_off</i>
+                            <span class="range-field">
+                                <input type="range" value="35" id="test5" min="0" max="100" />
+                            </span>
+                            <span>Rate</span>
+                            <span class="range-field">
+                                <input type="range" value="20" id="test5" min="0" max="100" />
+                            </span>
+                            <span>Pitch</span>
+                            <span class="range-field">
+                                <input type="range" value="40" id="test5" min="0" max="100" />
+                            </span>
+                            <span class="default right">Default</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="documents-wrapper">
+        <div class="document-btn">
+            <div class="document-links">
+                <a class="active" href="#!">Records</a>
+                <a href="#!">Documents</a>
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+        <div class="doc-sub-head">
+            <p>File Name</p>
+            <p>Action</p>
+        </div>
+
+        <div class="document-contents active">
+            <div class="docu-text">
+                <p>20 Nov.</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons active">pause</i></a>
+                <div>
+                    <div class="timer">
+                        <p>0:26</p>
+                        <p>4:74</p>
+                    </div>
+                    <div class="progress-bar">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons active">create</i></a>
+                <a href="#"><i class="material-icons active">arrow_downward</i></a>
+                <a href="#"><i class="material-icons active">delete</i></a>
+            </div>
+        </div>
+        <div class="document-contents">
+            <div class="docu-text">
+                <p>12:35 pm</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons">play_arrow</i></a>
+                <div>
+                    <div class="timer">
+                        <p class="left">7:22</p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons">create</i></a>
+                <a href="#"><i class="material-icons">arrow_downward</i></a>
+                <a href="#"><i class="material-icons">delete</i></a>
+            </div>
+        </div>
+        <div class="document-contents">
+            <div class="docu-text">
+                <p>Today</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons">play_arrow</i></a>
+                <div>
+                    <div class="timer">
+                        <p class="left">4:22</p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons">create</i></a>
+                <a href="#"><i class="material-icons">arrow_downward</i></a>
+                <a href="#"><i class="material-icons">delete</i></a>
+            </div>
+        </div>
+        <div class="document-contents">
+            <div class="docu-text">
+                <p>Yesterday</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons">play_arrow</i></a>
+                <div>
+                    <div class="timer">
+                        <p class="left">3:52</p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons">create</i></a>
+                <a href="#"><i class="material-icons">arrow_downward</i></a>
+                <a href="#"><i class="material-icons">delete</i></a>
+            </div>
+        </div>
+        <div class="document-contents">
+            <div class="docu-text">
+                <p>5 Days Ago</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons">play_arrow</i></a>
+                <div>
+                    <div class="timer">
+                        <p class="left">5:00</p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons">create</i></a>
+                <a href="#"><i class="material-icons">arrow_downward</i></a>
+                <a href="#"><i class="material-icons">delete</i></a>
+            </div>
+        </div>
+        <div class="document-contents">
+            <div class="docu-text">
+                <p>3 Months Ago</p>
+                <p>Literature 101</p>
+            </div>
+
+            <div class="docu-controls">
+                <a href="#"><i class="material-icons">play_arrow</i></a>
+                <div>
+                    <div class="timer">
+                        <p class="left">9:22</p>
+                    </div>
+                    <div class="progress-bar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="docu-menu">
+                <a href="#"><i class="material-icons">create</i></a>
+                <a href="#"><i class="material-icons">arrow_downward</i></a>
+                <a href="#"><i class="material-icons">delete</i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <hr>
+        <div class="footer-contents">
+            <div class="footer-logo left">
+                <a class="logo" href="index.html">VOICE<span>PEN</span></a>
+                <p>Copyright &copy; 2019 Voicepen</p>
+            </div>
+
+            <ul class="footer-links right">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+        integrity="sha256-6DDZX77BrYnAmK9a3N3tvNPtyTIk1q1w9iW+UBtot3Y=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
