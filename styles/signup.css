@@ -1,0 +1,239 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 74, 128, 0.85) 0%, #00538F 100%);
+  color: white;
+}
+
+header,
+form {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  padding-top: 15px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header .head-logo {
+  margin: 0px;
+  color: #FFB44F;
+  font-weight: 800;
+}
+
+header .head-logo span {
+  color: white;
+}
+
+header .header-btn {
+  display: none;
+}
+
+form .create,
+form h3 {
+  margin: 0px;
+}
+
+form .top-row {
+  margin-top: 25px;
+}
+
+label {
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  padding: 10px 5px;
+  outline: none;
+}
+
+input[type='button'] {
+  background: #FFB44F;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.or span {
+  margin: 0px 20px;
+}
+
+.bar {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  border: none;
+  height: 2px;
+  background: white;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+
+.socials a {
+  padding: 10px 18px;
+  color: white;
+  background: #D72A04;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.socials a:last-child {
+  background: #0669C9;
+}
+
+.socials i {
+  margin-right: 10px;
+}
+
+.forget {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  color: #F2994A;
+  text-align: right;
+  text-decoration: none !important;
+}
+
+.forget:hover {
+  color: #F2994A;
+}
+
+@media (min-width: 800px) {
+  body {
+    background: white;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    grid-auto-rows: minmax(100vh, 100vh);
+  }
+  body header,
+  body form {
+    width: 100%;
+  }
+  body header {
+    padding: 0px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    background-image: url("../img/Mask Group.png");
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover;
+  }
+  body header .header-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    background: #FFB44F;
+    border-radius: 3px;
+    padding: 15px 73px 15px 74px;
+    margin-top: 24px;
+  }
+  body header p {
+    color: white;
+  }
+  body form {
+    width: 60%;
+    margin: auto;
+  }
+  body form h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #474747;
+  }
+  body form .top-row,
+  body form .last-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 12px;
+  }
+  body form input {
+    border: 1px solid #C4C4C4;
+  }
+  body .or {
+    color: #C4C4C4;
+  }
+  body .bar {
+    background: #C4C4C4;
+  }
+  body .socials a {
+    padding: 19px 45px;
+  }
+  body .socials i {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  form {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 890px) {
+  .socials a {
+    padding: 10px 17px !important;
+  }
+}
+
+@media (min-width: 890px) and (max-width: 1040px) {
+  .socials a {
+    padding: 13px 27px !important;
+  }
+}
+/*# sourceMappingURL=signup.css.map */
